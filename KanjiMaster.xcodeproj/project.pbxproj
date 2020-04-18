@@ -1,0 +1,611 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		913E614AC27CD5ECB026A455 /* Pods_KanjiMaster.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A778789B1165C7A9C66D1C5 /* Pods_KanjiMaster.framework */; };
+		C80AF8742440B45100B48553 /* EngToKanjiTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C80AF8732440B45100B48553 /* EngToKanjiTableViewCell.swift */; };
+		C83820CC2442A47500C7E7DC /* KanjiListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83820CB2442A47500C7E7DC /* KanjiListTableViewCell.swift */; };
+		C83820D12442B5BD00C7E7DC /* Progress.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83820D02442B5BD00C7E7DC /* Progress.swift */; };
+		C83820D32442B7BB00C7E7DC /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83820D22442B7BB00C7E7DC /* InfoViewController.swift */; };
+		C83B70A0243F6D0300A34878 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83B709F243F6D0300A34878 /* AppDelegate.swift */; };
+		C83B70A2243F6D0300A34878 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83B70A1243F6D0300A34878 /* SceneDelegate.swift */; };
+		C83B70A7243F6D0300A34878 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C83B70A5243F6D0300A34878 /* Main.storyboard */; };
+		C83B70A9243F6D0700A34878 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C83B70A8243F6D0700A34878 /* Assets.xcassets */; };
+		C83B70AC243F6D0700A34878 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C83B70AA243F6D0700A34878 /* LaunchScreen.storyboard */; };
+		C83B70B7243F7BE200A34878 /* EngToKanjiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83B70B6243F7BE200A34878 /* EngToKanjiViewController.swift */; };
+		C83B70B9243F7BF500A34878 /* KanjiToEngViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83B70B8243F7BF500A34878 /* KanjiToEngViewController.swift */; };
+		C83B70BB243F7C1600A34878 /* AllKanjiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83B70BA243F7C1600A34878 /* AllKanjiViewController.swift */; };
+		C83B70BD243F7C2C00A34878 /* GradeLevelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83B70BC243F7C2C00A34878 /* GradeLevelViewController.swift */; };
+		C83B70C1243FA1C200A34878 /* Json4SwiftBaseEngToKanji.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83B70BE243FA1C200A34878 /* Json4SwiftBaseEngToKanji.swift */; };
+		C83B70C2243FA1C200A34878 /* Kanjiii.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83B70BF243FA1C200A34878 /* Kanjiii.swift */; };
+		C83B70C3243FA1C200A34878 /* Radicalll.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83B70C0243FA1C200A34878 /* Radicalll.swift */; };
+		C844CD9F244267C900D88D05 /* Strokes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C844CD92244267C900D88D05 /* Strokes.swift */; };
+		C844CDA0244267C900D88D05 /* References.swift in Sources */ = {isa = PBXBuildFile; fileRef = C844CD93244267C900D88D05 /* References.swift */; };
+		C844CDA1244267C900D88D05 /* Examples.swift in Sources */ = {isa = PBXBuildFile; fileRef = C844CD94244267C900D88D05 /* Examples.swift */; };
+		C844CDA2244267C900D88D05 /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = C844CD95244267C900D88D05 /* Position.swift */; };
+		C844CDA3244267C900D88D05 /* Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = C844CD96244267C900D88D05 /* Audio.swift */; };
+		C844CDA4244267C900D88D05 /* Kunyomi.swift in Sources */ = {isa = PBXBuildFile; fileRef = C844CD97244267C900D88D05 /* Kunyomi.swift */; };
+		C844CDA5244267C900D88D05 /* Radical.swift in Sources */ = {isa = PBXBuildFile; fileRef = C844CD98244267C900D88D05 /* Radical.swift */; };
+		C844CDA6244267C900D88D05 /* Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = C844CD99244267C900D88D05 /* Name.swift */; };
+		C844CDA7244267C900D88D05 /* Meaning.swift in Sources */ = {isa = PBXBuildFile; fileRef = C844CD9A244267C900D88D05 /* Meaning.swift */; };
+		C844CDA8244267C900D88D05 /* Json4Swift_Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = C844CD9B244267C900D88D05 /* Json4Swift_Base.swift */; };
+		C844CDA9244267C900D88D05 /* Onyomi.swift in Sources */ = {isa = PBXBuildFile; fileRef = C844CD9C244267C900D88D05 /* Onyomi.swift */; };
+		C844CDAA244267C900D88D05 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = C844CD9D244267C900D88D05 /* Video.swift */; };
+		C844CDAB244267C900D88D05 /* Kanji.swift in Sources */ = {isa = PBXBuildFile; fileRef = C844CD9E244267C900D88D05 /* Kanji.swift */; };
+		C844CDAD2442873400D88D05 /* GradeDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C844CDAC2442873400D88D05 /* GradeDetailsViewController.swift */; };
+		C8C05F032449CC9100F11C83 /* SharedTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C05F022449CC9100F11C83 /* SharedTask.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0A778789B1165C7A9C66D1C5 /* Pods_KanjiMaster.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KanjiMaster.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F62D00286A94949AA0A1DB0 /* Pods-KanjiMaster.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KanjiMaster.debug.xcconfig"; path = "Target Support Files/Pods-KanjiMaster/Pods-KanjiMaster.debug.xcconfig"; sourceTree = "<group>"; };
+		944B8C0ADFBD58D7721FA4C3 /* Pods-KanjiMaster.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KanjiMaster.release.xcconfig"; path = "Target Support Files/Pods-KanjiMaster/Pods-KanjiMaster.release.xcconfig"; sourceTree = "<group>"; };
+		C80AF8732440B45100B48553 /* EngToKanjiTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngToKanjiTableViewCell.swift; sourceTree = "<group>"; };
+		C83820CB2442A47500C7E7DC /* KanjiListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanjiListTableViewCell.swift; sourceTree = "<group>"; };
+		C83820D02442B5BD00C7E7DC /* Progress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Progress.swift; sourceTree = "<group>"; };
+		C83820D22442B7BB00C7E7DC /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		C83B709C243F6D0300A34878 /* Kanji Master.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kanji Master.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C83B709F243F6D0300A34878 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C83B70A1243F6D0300A34878 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C83B70A6243F6D0300A34878 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C83B70A8243F6D0700A34878 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C83B70AB243F6D0700A34878 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C83B70AD243F6D0700A34878 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C83B70B6243F7BE200A34878 /* EngToKanjiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngToKanjiViewController.swift; sourceTree = "<group>"; };
+		C83B70B8243F7BF500A34878 /* KanjiToEngViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanjiToEngViewController.swift; sourceTree = "<group>"; };
+		C83B70BA243F7C1600A34878 /* AllKanjiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllKanjiViewController.swift; sourceTree = "<group>"; };
+		C83B70BC243F7C2C00A34878 /* GradeLevelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradeLevelViewController.swift; sourceTree = "<group>"; };
+		C83B70BE243FA1C200A34878 /* Json4SwiftBaseEngToKanji.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Json4SwiftBaseEngToKanji.swift; sourceTree = "<group>"; };
+		C83B70BF243FA1C200A34878 /* Kanjiii.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Kanjiii.swift; sourceTree = "<group>"; };
+		C83B70C0243FA1C200A34878 /* Radicalll.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Radicalll.swift; sourceTree = "<group>"; };
+		C844CD92244267C900D88D05 /* Strokes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strokes.swift; sourceTree = "<group>"; };
+		C844CD93244267C900D88D05 /* References.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = References.swift; sourceTree = "<group>"; };
+		C844CD94244267C900D88D05 /* Examples.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Examples.swift; sourceTree = "<group>"; };
+		C844CD95244267C900D88D05 /* Position.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
+		C844CD96244267C900D88D05 /* Audio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Audio.swift; sourceTree = "<group>"; };
+		C844CD97244267C900D88D05 /* Kunyomi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Kunyomi.swift; sourceTree = "<group>"; };
+		C844CD98244267C900D88D05 /* Radical.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Radical.swift; sourceTree = "<group>"; };
+		C844CD99244267C900D88D05 /* Name.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Name.swift; sourceTree = "<group>"; };
+		C844CD9A244267C900D88D05 /* Meaning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meaning.swift; sourceTree = "<group>"; };
+		C844CD9B244267C900D88D05 /* Json4Swift_Base.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Json4Swift_Base.swift; sourceTree = "<group>"; };
+		C844CD9C244267C900D88D05 /* Onyomi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Onyomi.swift; sourceTree = "<group>"; };
+		C844CD9D244267C900D88D05 /* Video.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		C844CD9E244267C900D88D05 /* Kanji.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Kanji.swift; sourceTree = "<group>"; };
+		C844CDAC2442873400D88D05 /* GradeDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradeDetailsViewController.swift; sourceTree = "<group>"; };
+		C88F842724431D75002A07EF /* KanjiMaster.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = KanjiMaster.entitlements; sourceTree = "<group>"; };
+		C8C05F022449CC9100F11C83 /* SharedTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedTask.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C83B7099243F6D0300A34878 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				913E614AC27CD5ECB026A455 /* Pods_KanjiMaster.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1C91C61CCA97E6158D405AFF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4F62D00286A94949AA0A1DB0 /* Pods-KanjiMaster.debug.xcconfig */,
+				944B8C0ADFBD58D7721FA4C3 /* Pods-KanjiMaster.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6C1F315231C3350958E93893 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A778789B1165C7A9C66D1C5 /* Pods_KanjiMaster.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C80AF8752440B46800B48553 /* EngToKanji */ = {
+			isa = PBXGroup;
+			children = (
+				C83B70B6243F7BE200A34878 /* EngToKanjiViewController.swift */,
+				C80AF8732440B45100B48553 /* EngToKanjiTableViewCell.swift */,
+			);
+			path = EngToKanji;
+			sourceTree = "<group>";
+		};
+		C83820C924428DC800C7E7DC /* GradeLevel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = GradeLevel;
+			sourceTree = "<group>";
+		};
+		C83820CA2442A44C00C7E7DC /* KanjiList */ = {
+			isa = PBXGroup;
+			children = (
+				C83B70BA243F7C1600A34878 /* AllKanjiViewController.swift */,
+				C83820CB2442A47500C7E7DC /* KanjiListTableViewCell.swift */,
+			);
+			path = KanjiList;
+			sourceTree = "<group>";
+		};
+		C83B7093243F6D0200A34878 = {
+			isa = PBXGroup;
+			children = (
+				C83B709E243F6D0300A34878 /* KanjiMaster */,
+				C83B709D243F6D0300A34878 /* Products */,
+				1C91C61CCA97E6158D405AFF /* Pods */,
+				6C1F315231C3350958E93893 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C83B709D243F6D0300A34878 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C83B709C243F6D0300A34878 /* Kanji Master.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C83B709E243F6D0300A34878 /* KanjiMaster */ = {
+			isa = PBXGroup;
+			children = (
+				C88F842724431D75002A07EF /* KanjiMaster.entitlements */,
+				C83B70B5243F7B7E00A34878 /* Model */,
+				C83B70B4243F7B5700A34878 /* Controller */,
+				C83B70B3243F7B4600A34878 /* View */,
+				C83B70A8243F6D0700A34878 /* Assets.xcassets */,
+				C83B70AD243F6D0700A34878 /* Info.plist */,
+			);
+			path = KanjiMaster;
+			sourceTree = "<group>";
+		};
+		C83B70B3243F7B4600A34878 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C83B70A5243F6D0300A34878 /* Main.storyboard */,
+				C83B70AA243F6D0700A34878 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C83B70B4243F7B5700A34878 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C844CDAF2442875A00D88D05 /* Other */,
+				C80AF8752440B46800B48553 /* EngToKanji */,
+				C8BEA2982441C6510056F6F5 /* KanjiToEng */,
+				C83820CA2442A44C00C7E7DC /* KanjiList */,
+				C844CDAE2442873C00D88D05 /* Grade */,
+				C83820D22442B7BB00C7E7DC /* InfoViewController.swift */,
+				C8C05F022449CC9100F11C83 /* SharedTask.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C83B70B5243F7B7E00A34878 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C83820C924428DC800C7E7DC /* GradeLevel */,
+				C8BEA27D2440F4DE0056F6F5 /* KanjiToEng */,
+				C8BEA27C2440F4C00056F6F5 /* EngToKanji */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C844CDAE2442873C00D88D05 /* Grade */ = {
+			isa = PBXGroup;
+			children = (
+				C83B70BC243F7C2C00A34878 /* GradeLevelViewController.swift */,
+				C844CDAC2442873400D88D05 /* GradeDetailsViewController.swift */,
+			);
+			path = Grade;
+			sourceTree = "<group>";
+		};
+		C844CDAF2442875A00D88D05 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				C83B709F243F6D0300A34878 /* AppDelegate.swift */,
+				C83B70A1243F6D0300A34878 /* SceneDelegate.swift */,
+				C83820D02442B5BD00C7E7DC /* Progress.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		C8BEA27C2440F4C00056F6F5 /* EngToKanji */ = {
+			isa = PBXGroup;
+			children = (
+				C83B70BE243FA1C200A34878 /* Json4SwiftBaseEngToKanji.swift */,
+				C83B70BF243FA1C200A34878 /* Kanjiii.swift */,
+				C83B70C0243FA1C200A34878 /* Radicalll.swift */,
+			);
+			path = EngToKanji;
+			sourceTree = "<group>";
+		};
+		C8BEA27D2440F4DE0056F6F5 /* KanjiToEng */ = {
+			isa = PBXGroup;
+			children = (
+				C844CD96244267C900D88D05 /* Audio.swift */,
+				C844CD94244267C900D88D05 /* Examples.swift */,
+				C844CD9B244267C900D88D05 /* Json4Swift_Base.swift */,
+				C844CD9E244267C900D88D05 /* Kanji.swift */,
+				C844CD97244267C900D88D05 /* Kunyomi.swift */,
+				C844CD9A244267C900D88D05 /* Meaning.swift */,
+				C844CD99244267C900D88D05 /* Name.swift */,
+				C844CD9C244267C900D88D05 /* Onyomi.swift */,
+				C844CD95244267C900D88D05 /* Position.swift */,
+				C844CD98244267C900D88D05 /* Radical.swift */,
+				C844CD93244267C900D88D05 /* References.swift */,
+				C844CD92244267C900D88D05 /* Strokes.swift */,
+				C844CD9D244267C900D88D05 /* Video.swift */,
+			);
+			path = KanjiToEng;
+			sourceTree = "<group>";
+		};
+		C8BEA2982441C6510056F6F5 /* KanjiToEng */ = {
+			isa = PBXGroup;
+			children = (
+				C83B70B8243F7BF500A34878 /* KanjiToEngViewController.swift */,
+			);
+			path = KanjiToEng;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C83B709B243F6D0300A34878 /* KanjiMaster */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C83B70B0243F6D0700A34878 /* Build configuration list for PBXNativeTarget "KanjiMaster" */;
+			buildPhases = (
+				4E7328EE4EAB0096EACDEBB9 /* [CP] Check Pods Manifest.lock */,
+				C83B7098243F6D0300A34878 /* Sources */,
+				C83B7099243F6D0300A34878 /* Frameworks */,
+				C83B709A243F6D0300A34878 /* Resources */,
+				228F754EBB4410628041048F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KanjiMaster;
+			productName = KanjiMaster;
+			productReference = C83B709C243F6D0300A34878 /* Kanji Master.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C83B7094243F6D0200A34878 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Md Zahidul Islam Mazumder";
+				TargetAttributes = {
+					C83B709B243F6D0300A34878 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+				};
+			};
+			buildConfigurationList = C83B7097243F6D0200A34878 /* Build configuration list for PBXProject "KanjiMaster" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C83B7093243F6D0200A34878;
+			productRefGroup = C83B709D243F6D0300A34878 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C83B709B243F6D0300A34878 /* KanjiMaster */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C83B709A243F6D0300A34878 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C83B70AC243F6D0700A34878 /* LaunchScreen.storyboard in Resources */,
+				C83B70A9243F6D0700A34878 /* Assets.xcassets in Resources */,
+				C83B70A7243F6D0300A34878 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		228F754EBB4410628041048F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KanjiMaster/Pods-KanjiMaster-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KanjiMaster/Pods-KanjiMaster-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KanjiMaster/Pods-KanjiMaster-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4E7328EE4EAB0096EACDEBB9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KanjiMaster-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C83B7098243F6D0300A34878 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C844CDA2244267C900D88D05 /* Position.swift in Sources */,
+				C83820CC2442A47500C7E7DC /* KanjiListTableViewCell.swift in Sources */,
+				C83B70A0243F6D0300A34878 /* AppDelegate.swift in Sources */,
+				C83B70BD243F7C2C00A34878 /* GradeLevelViewController.swift in Sources */,
+				C83B70C3243FA1C200A34878 /* Radicalll.swift in Sources */,
+				C844CDA4244267C900D88D05 /* Kunyomi.swift in Sources */,
+				C844CDA5244267C900D88D05 /* Radical.swift in Sources */,
+				C844CDAD2442873400D88D05 /* GradeDetailsViewController.swift in Sources */,
+				C83820D12442B5BD00C7E7DC /* Progress.swift in Sources */,
+				C844CDA6244267C900D88D05 /* Name.swift in Sources */,
+				C844CDAA244267C900D88D05 /* Video.swift in Sources */,
+				C844CDA9244267C900D88D05 /* Onyomi.swift in Sources */,
+				C83B70B7243F7BE200A34878 /* EngToKanjiViewController.swift in Sources */,
+				C8C05F032449CC9100F11C83 /* SharedTask.swift in Sources */,
+				C83820D32442B7BB00C7E7DC /* InfoViewController.swift in Sources */,
+				C83B70C2243FA1C200A34878 /* Kanjiii.swift in Sources */,
+				C83B70B9243F7BF500A34878 /* KanjiToEngViewController.swift in Sources */,
+				C83B70BB243F7C1600A34878 /* AllKanjiViewController.swift in Sources */,
+				C80AF8742440B45100B48553 /* EngToKanjiTableViewCell.swift in Sources */,
+				C844CDA3244267C900D88D05 /* Audio.swift in Sources */,
+				C844CDA8244267C900D88D05 /* Json4Swift_Base.swift in Sources */,
+				C83B70C1243FA1C200A34878 /* Json4SwiftBaseEngToKanji.swift in Sources */,
+				C844CDA0244267C900D88D05 /* References.swift in Sources */,
+				C844CDA1244267C900D88D05 /* Examples.swift in Sources */,
+				C844CDAB244267C900D88D05 /* Kanji.swift in Sources */,
+				C844CDA7244267C900D88D05 /* Meaning.swift in Sources */,
+				C844CD9F244267C900D88D05 /* Strokes.swift in Sources */,
+				C83B70A2243F6D0300A34878 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C83B70A5243F6D0300A34878 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C83B70A6243F6D0300A34878 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C83B70AA243F6D0700A34878 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C83B70AB243F6D0700A34878 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C83B70AE243F6D0700A34878 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C83B70AF243F6D0700A34878 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C83B70B1243F6D0700A34878 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F62D00286A94949AA0A1DB0 /* Pods-KanjiMaster.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = KanjiMaster/KanjiMaster.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R975Y8X2C9;
+				INFOPLIST_FILE = KanjiMaster/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zahidZIM.KanjiMaster;
+				PRODUCT_NAME = "Kanji Master";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C83B70B2243F6D0700A34878 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 944B8C0ADFBD58D7721FA4C3 /* Pods-KanjiMaster.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = KanjiMaster/KanjiMaster.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R975Y8X2C9;
+				INFOPLIST_FILE = KanjiMaster/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zahidZIM.KanjiMaster;
+				PRODUCT_NAME = "Kanji Master";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C83B7097243F6D0200A34878 /* Build configuration list for PBXProject "KanjiMaster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C83B70AE243F6D0700A34878 /* Debug */,
+				C83B70AF243F6D0700A34878 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C83B70B0243F6D0700A34878 /* Build configuration list for PBXNativeTarget "KanjiMaster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C83B70B1243F6D0700A34878 /* Debug */,
+				C83B70B2243F6D0700A34878 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C83B7094243F6D0200A34878 /* Project object */;
+}
